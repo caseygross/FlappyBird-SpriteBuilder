@@ -143,7 +143,7 @@
     
     for (CCNode *bush in _bushes)
     {
-        bush.position = ccp(bush.position.x - character.physicsBody.velocity.x * delta), bush.position.y);
+        bush.position = ccp(bush.position.x - (character.physicsBody.velocity.x * delta), bush.position.y);
         
         if (bush.position.x <= (-1 * bush.contentSize.width))
         {
